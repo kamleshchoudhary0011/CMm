@@ -37,7 +37,6 @@ const Home = () => {
        SetisSidebarOpen={SetisSidebarOpen}   />
 
 
-
         {
 
         (()=>{
