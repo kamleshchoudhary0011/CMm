@@ -3,7 +3,7 @@ import React from 'react'
 const EmAttendance = () => {
   return (
     <div>
-      EmAttendance
+      EmAttend
 EmAttendance
     </div>
   )

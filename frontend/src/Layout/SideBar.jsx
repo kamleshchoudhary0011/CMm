@@ -26,29 +26,33 @@ const SideBar = ({isSidebarOPen,setSelectedComponent,
 <nav className='flex-1 px-4 space-y-2'>
 
 
-   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center '>
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("Dashboard")}>
     <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
    <span> Dashboard</span>
   </button>
-
-
-{
-  isAuthenticated && user?.role === "Manager" && (
-
-    <>
-    
-    <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center '>
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("Emattendance")}>
     <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
-   <span> Dashboard</span>
+   <span> Emattendance</span>
   </button>
 
 
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("EmLives")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> EmLives</span>
+  </button>
 
-    
-    </>
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("EmMyTask")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> EmMyTask</span>
+  </button>
 
-  )
-}
+
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("EmProfiles")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span>EmProfiles</span>
+  </button>
+
+
 
 
 </nav>
