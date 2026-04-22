@@ -5,7 +5,7 @@ const EmLives = () => {
   return (<>
     <div className='bg-black'>
     
-    {/* <div className='bg-white p-10 m-0 md:m-10 md:p-0'>
+   / <div className='bg-white p-10 m-0 md:m-10 md:p-0'>
       <div  className='flex justify-between items-center  bg-gray-200 p-10'>
         <h1 className='text-3xl'> Leaves</h1>
         <button className='bg-white p-2 rounded hover:bg-green-200 text-green-500 hover:text-black'> + Apply Leave</button>
@@ -41,7 +41,7 @@ const EmLives = () => {
 
     </div>
 
-    </div> */}
+    </div> 
     </div>
     </>
   )

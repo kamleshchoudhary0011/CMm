@@ -7,16 +7,16 @@ import EmAttendance from "../componets/EmployeComponent/EmAttendance"
 import EmLives from "../componets/EmployeComponent/EmLives"
 import EmMyTask from "../componets/EmployeComponent/EmMyTask"
 import EmProfiles from "../componets/EmployeComponent/EmProfiles"
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import EmLivesa from '../componets/EmployeComponent/EmLives.jsx' 
-=======
+// =======
 
 import MrDashbord from "../componets/ManegarComponent/MrDashbord"
 import MrProject from "../componets/ManegarComponent/MrProject"
 import MrReports from "../componets/ManegarComponent/MrReports"
 import MrSetting from "../componets/ManegarComponent/MrSetting"
 import MrTeam from "../componets/ManegarComponent/MrTeam"
->>>>>>> 4963b1f14cec869f703545cc75660611a9baa0b4
+// >>>>>>> 4963b1f14cec869f703545cc75660611a9baa0b4
 
 import HrAttendance from "../componets/HrComponent/HrAttendance"
 import HrAttendanceses from "../componets/HrComponent/HrAttendanceses"
@@ -116,7 +116,7 @@ const Home = () => {
     </div> 
     
    
-    <EmLivesa />
+    {/* <EmLivesa /> */}
    
     </>
   )
