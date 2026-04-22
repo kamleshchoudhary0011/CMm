@@ -7,7 +7,7 @@ import EmAttendance from "../componets/EmployeComponent/EmAttendance"
 import EmLives from "../componets/EmployeComponent/EmLives"
 import EmMyTask from "../componets/EmployeComponent/EmMyTask"
 import EmProfiles from "../componets/EmployeComponent/EmProfiles"
-
+import EmLivesa from '../componets/EmployeComponent/EmLives.jsx' 
 
 
 
@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <>
-    <div className='relative md:pl-64 flex min-h-screen bg-gray-300' >
+    {/* <div className='relative md:pl-64 flex min-h-screen bg-gray-300' >
  
  <div className='md:hidden z-10 absolute right-6 top-4 sm:top-6 flex justify-center items-center bg-black rounded-md h-9 w-9 text-white '>
 
@@ -58,8 +58,11 @@ const Home = () => {
        }
 
 
-    </div>
+    </div> */}
     
+   
+    <EmLivesa />
+   
     </>
   )
 }
