@@ -57,7 +57,6 @@ const Home = () => {
           switch(selectedComponent){
          
             case "Dashboard":{
-
               switch(user?.role){
                 case "Employe":
                   return <EmployeDashboard/>;
