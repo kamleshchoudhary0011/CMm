@@ -7,12 +7,16 @@ import EmAttendance from "../componets/EmployeComponent/EmAttendance"
 import EmLives from "../componets/EmployeComponent/EmLives"
 import EmMyTask from "../componets/EmployeComponent/EmMyTask"
 import EmProfiles from "../componets/EmployeComponent/EmProfiles"
+// <<<<<<< HEAD
+// import EmLivesa from '../componets/EmployeComponent/EmLives.jsx' 
+// =======
 
 import MrDashbord from "../componets/ManegarComponent/MrDashbord"
 import MrProject from "../componets/ManegarComponent/MrProject"
 import MrReports from "../componets/ManegarComponent/MrReports"
 import MrSetting from "../componets/ManegarComponent/MrSetting"
 import MrTeam from "../componets/ManegarComponent/MrTeam"
+// >>>>>>> 4963b1f14cec869f703545cc75660611a9baa0b4
 
 import HrAttendance from "../componets/HrComponent/HrAttendance"
 import HrAttendanceses from "../componets/HrComponent/HrAttendanceses"
@@ -72,45 +76,107 @@ const Home = () => {
             }
 
             case "Emattendance":
-              // if(user?.role==="Employe"){
+              if(user?.role==="Employe"){
                 return <EmAttendance/>
-              // }
+              }
               break;
             case "EmLives":
-              // if(user?.role === "Employe"){
+              if(user?.role === "Employe"){
                  return <EmLives/>
                 
-              // }
+              }
               break;
 
                case "EmMyTask":
-                // if(user?.role === "Employe"){
+                if(user?.role === "Employe"){
                   return <EmMyTask/>
-                // }
+                }
                 break;
 
 
                 case "EmProfiles":
-                  // if(user?.role === "Employe"){
+                  if(user?.role === "Employe"){
                     return<EmProfiles/>
-                  // }
+                  }
                   break;
 
   
   
-  
+               //// hr Component 
+
+               case "hrAttendance":
+                // if (user?.role === "HR") {
+                  return <HrAttendance/>
+
+                // }
+              
+                break;
+
+                case "hrAttendancess":
+                  // if (user?.role=== "HR") {
+                    return <HrAttendanceses/>
+
+                  // }
+                  break;
+
+                  case "hrEmploye":
+                    // if(user?.role=== "HR"){
+                      return <HrEmployes/>
+                    // }
+                    break;
+
+                    case "hrLives":
+                      // if(user?.role === "HR"){
+                        return <HrLives/>
+                      // }
+
+                      break;
+
+                      case "hrPayrole" : 
+                      // if (user?.role === "HR") {
+                        return <HrPayrole/>
+                      // }                    
+                      break;
+
+                //  Manegar Component
+
+                case "MrProject":
+                  // if (user?.role === "Manager") {
+                    return <MrProject/>
+                  // }
+                  break;
+
+                  case "MrReport":
+                    // if (user?.role === "Manager") {
+                      return <MrReports/>
+                    // }
+                    break;
+
+                    case "MrSetting" :
+                      // if (user?.role === "Manager") {
+                        return <MrSetting/>
+                      // }
+                      break;
 
 
+                      case "MrTeam" : 
+                      // if (user?.role === "Manager") {
+                        return <MrTeam/>
+                      // }
+                      break;
 
-            
+
+          
 
           }
         })()
        }
 
 
-    </div>
+    </div> 
     
+   
+   
     </>
   )
 }

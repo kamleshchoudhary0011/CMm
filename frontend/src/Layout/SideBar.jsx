@@ -24,12 +24,20 @@ const SideBar = ({isSidebarOPen,setSelectedComponent,
 <hr />
 <hr />
 <nav className='flex-1 px-4 space-y-2'>
-
-
+  
    <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("Dashboard")}>
     <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
    <span> Dashboard</span>
   </button>
+
+  {
+
+    isAuthenticated && user?.role === "Employe" &&(
+
+      <>
+      
+      
+
    <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("Emattendance")}>
     <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
    <span> Emattendance</span>
@@ -53,6 +61,80 @@ const SideBar = ({isSidebarOPen,setSelectedComponent,
   </button>
 
 
+
+      
+      </>
+    )
+  }
+
+
+
+    {/* hr Components */}
+
+{
+  isAuthenticated && user?.role === "HR" &&(
+
+    <> 
+    
+    
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("hrAttendance")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> Attendance</span>
+  </button>
+    
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("hrAttendancess")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> Attendancess</span>
+  </button>
+    
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("hrEmploye")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> Employe</span>
+  </button>
+    
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("hrLives")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> Lives</span>
+  </button>
+   <button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("hrPayrole")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> PayRole</span>
+  </button>
+    
+     
+    </>
+  )
+} 
+
+
+{/* {
+  isAuthenticated && user?.role === "Manager" &&(
+<> */}
+
+<button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("MrProject")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span> Project</span>
+  </button>
+
+
+<button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("MrReport")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span>Report</span>
+  </button>
+
+<button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("MrSetting")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span>Setting</span>
+  </button>
+<button className='w-36    bg-transparent rounded-md hover:cursor-pointer flex iten-center' onClick={()=>setSelectedComponent("MrTeam")}>
+    <img width="18px" height="15px" className=' mx-2' src={a} alt="logo" />
+   <span>Team</span>
+  </button>
+    
+{/* </>
+
+  )
+} */}
 
 
 </nav>
